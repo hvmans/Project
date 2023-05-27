@@ -6,7 +6,7 @@ import java.util.List;
 public class Property {
 
     private static int propertyIdCounter = 0;
-    private int id;
+    private int propertyId;
     private String propertyType;
     private String location;
     private double area;
@@ -21,8 +21,7 @@ public class Property {
         this.distanceCenter = distanceCenter;
         this.photos = photos;
         this.owner = owner;
-        this.id = propertyIdCounter++;
-
+        this.propertyId = propertyIdCounter++;
     }
 
     public Property() {
