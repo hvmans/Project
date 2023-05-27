@@ -8,9 +8,9 @@ public class Request {
     private int requestId;
     String requestType;
     Property requestedProperty;
-    Agent agent;
+    Employee agent;
 
-    public Request(String requestType, Property requestedProperty, Agent agent) {
+    public Request(String requestType, Property requestedProperty, Employee agent) {
         this.requestType = requestType;
         this.requestedProperty = requestedProperty;
         this.agent = agent;
@@ -41,11 +41,11 @@ public class Request {
         this.requestedProperty = requestedProperty;
     }
 
-    public Agent getAgent() {
+    public Employee getAgent() {
         return agent;
     }
 
-    public void setAgent(Agent agent) {
+    public void setAgent(Employee agent) {
         this.agent = agent;
     }
 }
