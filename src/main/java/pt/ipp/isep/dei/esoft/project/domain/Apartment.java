@@ -1,9 +1,6 @@
 package pt.ipp.isep.dei.esoft.project.domain;
 
 public class Apartment extends Property {
-    /*the number of
-    bedrooms, the number of bathrooms, the number of parking spaces and the available equipment,
-    such as central heating and/or air conditioning.*/
 
     private int numberBedrooms, numberBathrooms, numberParkingSpaces;
     private String availableEquipment;

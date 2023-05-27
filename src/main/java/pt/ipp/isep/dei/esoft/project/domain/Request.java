@@ -6,8 +6,46 @@ public class Request {
     private final String REQUEST_TYPE_LEASE = "Lease";
     private static int requestIdCounter = 0;
     private int requestId;
+    String requestType;
     Property requestedProperty;
     Agent agent;
-    String requestType;
 
+    public Request(String requestType, Property requestedProperty, Agent agent) {
+        this.requestType = requestType;
+        this.requestedProperty = requestedProperty;
+        this.agent = agent;
+        this.requestId = requestIdCounter++;
+    }
+
+    public static int getRequestIdCounter() {
+        return requestIdCounter;
+    }
+
+    public int getRequestId() {
+        return requestId;
+    }
+
+    public String getRequestType() {
+        return requestType;
+    }
+
+    public void setRequestType(String requestType) {
+        this.requestType = requestType;
+    }
+
+    public Property getRequestedProperty() {
+        return requestedProperty;
+    }
+
+    public void setRequestedProperty(Property requestedProperty) {
+        this.requestedProperty = requestedProperty;
+    }
+
+    public Agent getAgent() {
+        return agent;
+    }
+
+    public void setAgent(Agent agent) {
+        this.agent = agent;
+    }
 }
