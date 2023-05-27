@@ -1,7 +1,6 @@
 package pt.ipp.isep.dei.esoft.project.domain;
 
 public class Land extends Property{
-    private int id;
     private String propertyType;
     private String location;
     private double area;
@@ -9,9 +8,8 @@ public class Land extends Property{
     private String photos;
     private Owner owner;
 
-    public Land(String propertyType, String location, double area, double distanceCenter, String photos, Owner owner, int id, String propertyType1, String location1, double area1, double distanceCenter1, String photos1, Owner owner1) {
+    public Land(String propertyType, String location, double area, double distanceCenter, String photos, Owner owner, String propertyType1, String location1, double area1, double distanceCenter1, String photos1, Owner owner1) {
         super(propertyType, location, area, distanceCenter, photos, owner);
-        this.id = id;
         this.propertyType = propertyType1;
         this.location = location1;
         this.area = area1;
@@ -20,22 +18,13 @@ public class Land extends Property{
         this.owner = owner1;
     }
 
-    public Land(int id, String propertyType, String location, double area, double distanceCenter, String photos, Owner owner) {
-        this.id = id;
+    public Land(String propertyType, String location, double area, double distanceCenter, String photos, Owner owner) {
         this.propertyType = propertyType;
         this.location = location;
         this.area = area;
         this.distanceCenter = distanceCenter;
         this.photos = photos;
         this.owner = owner;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     @Override
@@ -97,15 +86,4 @@ public class Land extends Property{
     public void setOwner(Owner owner) {
         this.owner = owner;
     }
-
-    public Land(String propertyType, String location, double area, double distanceCenter, String photos, Owner owner) {
-        this.propertyType = propertyType;
-        this.location = location;
-        this.area = area;
-        this.distanceCenter = distanceCenter;
-        this.photos = photos;
-        this.owner = owner;
-
-    }
-
 }
