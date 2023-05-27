@@ -10,10 +10,13 @@ public class Agency {
     private String location;
     private int telephoneNumber;
 
-    public Agency(Email agencyEmail, String location, int telephoneNumber) {
+    private Employee manager;
+
+    public Agency(Email agencyEmail, String location, int telephoneNumber, Employee manager) {
         this.agencyEmail = agencyEmail;
         this.location = location;
         this.telephoneNumber = telephoneNumber;
+        this.manager = manager;
         this.agencyId = agencyIdCounter++;
     }
 
@@ -47,5 +50,13 @@ public class Agency {
 
     public void setTelephoneNumber(int telephoneNumber) {
         this.telephoneNumber = telephoneNumber;
+    }
+
+    public Employee getManager() {
+        return manager;
+    }
+
+    public void setManager(Employee manager) {
+        this.manager = manager;
     }
 }
