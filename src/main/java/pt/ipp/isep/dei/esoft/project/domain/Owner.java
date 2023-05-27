@@ -1,6 +1,6 @@
 package pt.ipp.isep.dei.esoft.project.domain;
+import pt.isep.lei.esoft.auth.domain.model.Email;
 
-import java.util.Objects;
 
 /**
  * The type Owner.
@@ -11,14 +11,14 @@ public class Owner {
     private String name;
     private int ccNumber;
     private String taxNumber;
-    private final String emailAddress;
+    private final Email ownerEmail;
     private String phoneNumber;
 
-    public Owner(String name, int ccNumber, String taxNumber, String emailAddress, String phoneNumber) {
+    public Owner(String name, int ccNumber, String taxNumber, Email emailAddress, String phoneNumber) {
         this.name = name;
         this.ccNumber = ccNumber;
         this.taxNumber = taxNumber;
-        this.emailAddress = emailAddress;
+        this.ownerEmail = emailAddress;
         this.phoneNumber = phoneNumber;
         this.ownerId = ownerIdCounter++;
     }
@@ -51,8 +51,8 @@ public class Owner {
         return taxNumber;
     }
 
-    public String getEmailAddress() {
-        return emailAddress;
+    public Email getOwnerEmail() {
+        return ownerEmail;
     }
 
     public String getPhoneNumber() {
@@ -67,7 +67,7 @@ public class Owner {
         return ownerId;
     }
 
-    public Owner clone(){return new Owner(this.name, this.ccNumber, this.taxNumber, this.emailAddress, this.phoneNumber);
+    public Owner clone(){return new Owner(this.name, this.ccNumber, this.taxNumber, this.ownerEmail, this.phoneNumber);
 }
 
 

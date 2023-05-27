@@ -31,7 +31,6 @@ public class Land extends Property{
     }
 
     public int getId() {
-        //xD
         return id;
     }
 
