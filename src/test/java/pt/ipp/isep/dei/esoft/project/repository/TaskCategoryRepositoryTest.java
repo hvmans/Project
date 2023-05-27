@@ -2,6 +2,7 @@ package pt.ipp.isep.dei.esoft.project.repository;
 
 import org.junit.jupiter.api.Test;
 import pt.ipp.isep.dei.esoft.project.domain.templates.TaskCategory;
+import pt.ipp.isep.dei.esoft.project.repository.templates.TaskCategoryRepository;
 
 import java.util.Optional;
 

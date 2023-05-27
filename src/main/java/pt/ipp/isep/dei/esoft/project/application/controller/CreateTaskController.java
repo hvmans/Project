@@ -5,9 +5,9 @@ import pt.ipp.isep.dei.esoft.project.domain.templates.Organization;
 import pt.ipp.isep.dei.esoft.project.domain.templates.Task;
 import pt.ipp.isep.dei.esoft.project.domain.templates.TaskCategory;
 import pt.ipp.isep.dei.esoft.project.repository.AuthenticationRepository;
-import pt.ipp.isep.dei.esoft.project.repository.OrganizationRepository;
+import pt.ipp.isep.dei.esoft.project.repository.templates.OrganizationRepository;
 import pt.ipp.isep.dei.esoft.project.repository.Repositories;
-import pt.ipp.isep.dei.esoft.project.repository.TaskCategoryRepository;
+import pt.ipp.isep.dei.esoft.project.repository.templates.TaskCategoryRepository;
 import pt.isep.lei.esoft.auth.domain.model.Email;
 
 import java.util.List;

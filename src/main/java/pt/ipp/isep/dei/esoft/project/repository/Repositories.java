@@ -1,5 +1,8 @@
 package pt.ipp.isep.dei.esoft.project.repository;
 
+import pt.ipp.isep.dei.esoft.project.repository.templates.OrganizationRepository;
+import pt.ipp.isep.dei.esoft.project.repository.templates.TaskCategoryRepository;
+
 public class Repositories {
 
     private static final Repositories instance = new Repositories();

@@ -3,6 +3,7 @@ package pt.ipp.isep.dei.esoft.project.repository;
 import org.junit.jupiter.api.Test;
 import pt.ipp.isep.dei.esoft.project.domain.Employee;
 import pt.ipp.isep.dei.esoft.project.domain.templates.Organization;
+import pt.ipp.isep.dei.esoft.project.repository.templates.OrganizationRepository;
 
 import java.util.Optional;
 
