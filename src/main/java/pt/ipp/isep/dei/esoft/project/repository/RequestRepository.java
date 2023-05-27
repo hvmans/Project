@@ -20,6 +20,6 @@ public class RequestRepository {
     }
 
     public void addRequest(Request requestToAdd) {
-
+        requests.add(requestToAdd);
     }
 }
